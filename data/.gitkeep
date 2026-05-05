@@ -1,0 +1,7 @@
+# Data directory
+# Place your knowledge base files here:
+# - .json files (structured data)
+# - .txt files (unstructured text)
+# - .md files (markdown)
+
+# Example: data/knowledge_base/ayurveda_diseases.json

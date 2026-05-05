@@ -1,0 +1,73 @@
+# Core dependencies for Ayurveda RAG System
+
+# Streamlit - Interactive UI Framework
+streamlit
+streamlit-chat
+
+# LLM & Language Model Packages
+google-generativeai  # Google Gemini API client
+requests  # HTTP library for API calls
+
+# Embeddings & Vector Search
+sentence-transformers  # Embedding models
+torch  # PyTorch (lightweight CPU version)
+torch-cpu # Ensure CPU-only installation
+faiss-cpu # Vector similarity search (CPU-optimized)
+
+# Text Processing & Retrieval
+rank-bm25  # BM25 ranking algorithm
+nltk # Natural language toolkit
+scikit-learn  # Machine learning utilities
+
+# Cross-Encoder for Reranking
+cross-encoder
+
+# Data Processing
+numpy # Numerical computing
+pandas  # Data manipulation
+scipy # Scientific computing
+
+# Database
+sqlite3  # Built-in, no installation needed
+
+# JSON & Data Handling
+jsonschema  # JSON validation
+
+# Environment & Configuration
+python-dotenv  # Load environment variables
+pydantic # Data validation
+
+# Utilities
+tqdm # Progress bars
+logging # Enhanced logging
+
+# Optional: For better async handling
+asyncio  # Built-in
+
+# Optional: For performance monitoring
+psutil  # System monitoring
+
+# Development & Testing
+pytest # Testing framework
+black # Code formatting
+flake8  # Linting
+
+# Notes on dependencies:
+# - torch: Downloaded as CPU-only (~500MB) to save bandwidth
+# - sentence-transformers: Will auto-download models (~500MB each) on first run
+# - faiss-cpu: CPU-optimized version, lighter than GPU version
+# - All packages tested on Python 3.9-3.11
+
+# Installation command:
+# pip install -r requirements.txt
+
+# For systems with GPU (optional):
+# - Replace torch==2.2.0 with: torch==2.2.0+cu118
+# - Replace faiss-cpu with: faiss-gpu
+
+# Memory requirements:
+# - Base packages: ~800MB
+# - Embeddings model cache: ~500MB
+# - Reranker model cache: ~200MB
+# - FAISS index: ~500MB-2GB depending on data size
+# Total: ~2-3GB for complete installation
