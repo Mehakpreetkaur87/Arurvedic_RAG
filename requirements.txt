@@ -71,3 +71,14 @@ flake8  # Linting
 # - Reranker model cache: ~200MB
 # - FAISS index: ~500MB-2GB depending on data size
 # Total: ~2-3GB for complete installation
+
+streamlit
+streamlit-chat
+google-generativeai
+requests
+sentence-transformers
+torch
+rank-25
+faiss-cpu
+
+

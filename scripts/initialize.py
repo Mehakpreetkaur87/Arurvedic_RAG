@@ -42,7 +42,7 @@ from pathlib import Path
 from typing import List, Dict, Tuple
 import argparse
 import time
-from google import genai
+import google.generativeai as genai
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))

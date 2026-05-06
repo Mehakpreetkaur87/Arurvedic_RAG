@@ -304,7 +304,7 @@ def render_chat_interface():
     
     # Title
     st.markdown("""
-    <h1>🌿 Ayurveda RAG Chatbot</h1>
+    <h1> Ayurveda RAG Chatbot</h1>
     <p style="text-align: center; color: gray;">
     Ask questions about Ayurvedic medicine, treatments, and remedies
     </p>
@@ -374,20 +374,37 @@ def render_chat_interface():
                     st.info(f"📚 Retrieved {len(search_result.documents)} documents in {search_result.processing_time_ms:.1f}ms")
                 
                 # Display retrieved documents
+                # with st.expander(f"📄 Retrieved Sources ({len(search_result.documents)})"):
+                #     for i, doc in enumerate(search_result.documents, 1):
+                #         st.markdown(f"**Document {i}** (Relevance: {doc.reranker_score*100:.1f}%)")
+                        
+                #         # Show document content preview
+                #         # preview = self.documents[int(doc.id)][:300] + "..."
+                #         preview = st.session_state.rag_pipeline.documents[int(doc.id)][:300] + "..."
+                #         st.caption(preview)
+                        
+                #         # Scores
+                #         col1, col2, col3 = st.columns(3)
+                #         col1.metric("BM25", f"{doc.bm25_score:.2f}")
+                #         col2.metric("Vector", f"{doc.vector_score:.2f}")
+                #         col3.metric("Rerank", f"{doc.reranker_score:.2f}")
+                #         st.divider()
+                
+                #changed code:
                 with st.expander(f"📄 Retrieved Sources ({len(search_result.documents)})"):
                     for i, doc in enumerate(search_result.documents, 1):
                         st.markdown(f"**Document {i}** (Relevance: {doc.reranker_score*100:.1f}%)")
-                        
-                        # Show document content preview
-                        preview = self.documents[int(doc.id)][:300] + "..."
-                        st.caption(preview)
-                        
-                        # Scores
+                        st.caption(doc.content[:300] + "...")
+
                         col1, col2, col3 = st.columns(3)
                         col1.metric("BM25", f"{doc.bm25_score:.2f}")
                         col2.metric("Vector", f"{doc.vector_score:.2f}")
                         col3.metric("Rerank", f"{doc.reranker_score:.2f}")
                         st.divider()
+
+
+
+
                 
                 # Step 3: Generate response
                 with status_placeholder.container():
@@ -448,20 +465,21 @@ def render_history():
         
         if history:
             for i, conv in enumerate(reversed(history)):
-                with st.expander(f"**{conv[1][:50]}...** - {conv[5]}", expanded=False):
+                with st.expander(f"**{conv['query'][:50]}...** - {conv['timestamp']}", expanded=False):
+                # with st.expander(f"**{conv[1][:50]}...** - {conv[5]}", expanded=False):
                     
                     col1, col2 = st.columns([3, 1])
                     
                     with col1:
                         st.markdown("**Query:**")
-                        st.text(conv[1])
+                        st.text(conv['query'])
                         
                         st.markdown("**Response:**")
-                        st.text(conv[2][:500] + "...")
+                        st.text(conv['response'][:500] + "...")
                     
                     with col2:
                         st.markdown("**Time:**")
-                        st.text(conv[5])
+                        st.text(conv['timestamp'])
                         
                         if st.button(f"Load #{i}", key=f"load_{i}"):
                             st.session_state.messages.append({
