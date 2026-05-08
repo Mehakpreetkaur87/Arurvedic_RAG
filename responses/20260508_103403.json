@@ -1,0 +1,62 @@
+{
+    "timestamp": "2026-05-08 10:34:03.309614",
+    "demographics_age": 30,
+    "demographics_sex": "female",
+    "demographics_skin_type": "medium",
+    "demographics_ethnicity": [
+        "asian"
+    ],
+    "morphology_texture": [
+        "wart",
+        "nodule"
+    ],
+    "morphology_color": [
+        "red",
+        "skin_colored"
+    ],
+    "morphology_shape": [
+        "annular"
+    ],
+    "morphology_distribution": [
+        "widespread"
+    ],
+    "body_location": [
+        "forehead"
+    ],
+    "lesion_count": "single",
+    "symptoms_dermatological": [
+        "increasing_size",
+        "pain"
+    ],
+    "symptoms_systemic_present": "Yes",
+    "symptoms_systemic": [
+        "chills",
+        "weight_loss"
+    ],
+    "duration": [
+        "gradual_onset"
+    ],
+    "triggers": [
+        "chemicals"
+    ],
+    "treatment_taken": "Yes",
+    "treatments": [
+        "emollients"
+    ],
+    "treatment_notes": "fgsg",
+    "clinical_signs": [
+        "pathergy",
+        "darier_sign"
+    ],
+    "history_options": [
+        "genetic_predisposition"
+    ],
+    "history_text": "fxgsg",
+    "secondary_changes_present": "Yes",
+    "secondary_changes": [
+        "lichenification"
+    ],
+    "severity": "severe",
+    "other_notes": "b",
+    "uploaded_image": null
+}

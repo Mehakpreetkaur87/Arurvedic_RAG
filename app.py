@@ -44,6 +44,7 @@ import sqlite3
 from pipeline import RAGPipeline, SearchResult, TextNormalizer
 from llm_handler import get_llm_manager
 
+
 # ============================================================================
 # CONFIGURATION
 # ============================================================================

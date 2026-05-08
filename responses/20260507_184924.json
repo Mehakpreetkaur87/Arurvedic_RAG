@@ -1,0 +1,57 @@
+{
+    "timestamp": "2026-05-07 18:49:24.394964",
+    "demographics_age": 9,
+    "demographics_sex": "male",
+    "demographics_skin_type": "fair",
+    "demographics_ethnicity": [
+        "caucasian"
+    ],
+    "morphology_texture": [
+        "papule"
+    ],
+    "morphology_color": [
+        "skin_colored"
+    ],
+    "morphology_shape": [
+        "oval"
+    ],
+    "morphology_distribution": [
+        "unilateral"
+    ],
+    "body_location": [
+        "cheek"
+    ],
+    "lesion_count": "few",
+    "symptoms_dermatological": [
+        "burning"
+    ],
+    "symptoms_systemic_present": "Yes",
+    "symptoms_systemic": [
+        "fever"
+    ],
+    "duration": [
+        "days"
+    ],
+    "triggers": [
+        "sun_exposure"
+    ],
+    "treatment_taken": "Yes",
+    "treatments": [
+        "phototherapy"
+    ],
+    "treatment_notes": "",
+    "clinical_signs": [
+        "nikolsky_sign"
+    ],
+    "history_options": [
+        "family_history"
+    ],
+    "history_text": "qwqs",
+    "secondary_changes_present": "Yes",
+    "secondary_changes": [
+        "lichenification"
+    ],
+    "severity": "mild",
+    "other_notes": "asd",
+    "uploaded_image": null
+}

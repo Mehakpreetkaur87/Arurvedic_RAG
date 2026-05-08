@@ -579,6 +579,7 @@ class OllamaLLM(LLMProvider):
         except Exception as e:
             logger.error(f"Ollama streaming failed: {e}")
             yield f"Error during streaming: {str(e)}"
+
     
     @staticmethod
     def _build_prompt(prompt: str, context: str) -> str:
@@ -594,8 +595,10 @@ class OllamaLLM(LLMProvider):
         """
         system_prompt = """You are an Ayurveda (ancient Indian medicine) expert. 
 Provide accurate, helpful information about Ayurvedic treatments, remedies, and health concepts.
-Base your answers primarily on the provided context.
-If the context doesn't contain relevant information, acknowledge this limitation."""
+Base your answers only on the provided context.
+If the context doesn't contain relevant information, acknowledge this limitation.
+Do not include any information, remedies, or medical advice not explicitly mentioned in the CONTEXT.
+"""
         
         if context:
             prompt_text = f"""{system_prompt}

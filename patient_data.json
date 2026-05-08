@@ -1,0 +1,54 @@
+{
+    "demographics_age": "child",
+    "demographics_sex": "male",
+    "demographics_skin_type": "fst4",
+    "demographics_ethnicity": [
+        "caucasian"
+    ],
+    "morphology_texture": [
+        "raised",
+        "crusted"
+    ],
+    "morphology_color": [
+        "pink"
+    ],
+    "morphology_shape": [],
+    "morphology_distribution": [
+        "symmetric"
+    ],
+    "body_location": [
+        "forehead"
+    ],
+    "lesion_count": "multiple",
+    "symptoms_dermatological": [
+        "burning"
+    ],
+    "symptoms_systemic_present": "yes",
+    "symptoms_systemic": [
+        "chills"
+    ],
+    "duration": [
+        "acute"
+    ],
+    "triggers": [
+        "sun_exposure"
+    ],
+    "treatment_taken": "yes",
+    "treatments": [],
+    "treatment_notes": "",
+    "clinical_signs": [
+        "auspitz_sign"
+    ],
+    "history_options": [
+        "genetic_predisposition"
+    ],
+    "history_text": "",
+    "secondary_changes_present": "yes",
+    "secondary_changes": [],
+    "severity": "severe",
+    "image_metadata": [
+        "clinical_image"
+    ],
+    "uploaded_image_path": null,
+    "additional_notes": "ardw"
+}

@@ -1,0 +1,61 @@
+{
+    "timestamp": "2026-05-07 18:39:50.188829",
+    "demographics_age": 11,
+    "demographics_sex": "female",
+    "demographics_skin_type": "fair",
+    "demographics_ethnicity": [],
+    "morphology_texture": [
+        "raised",
+        "cyst"
+    ],
+    "morphology_color": [
+        "red"
+    ],
+    "morphology_shape": [
+        "oval"
+    ],
+    "morphology_distribution": [
+        "asymmetric"
+    ],
+    "body_location": [
+        "forehead",
+        "toe",
+        "scalp"
+    ],
+    "lesion_count": "single",
+    "symptoms_dermatological": [
+        "stinging"
+    ],
+    "symptoms_systemic_present": "Yes",
+    "symptoms_systemic": [
+        "chills",
+        "malaise"
+    ],
+    "duration": [
+        "sudden_onset"
+    ],
+    "triggers": [
+        "heat",
+        "humidity",
+        "diet"
+    ],
+    "treatment_taken": "Yes",
+    "treatments": [
+        "phototherapy",
+        "corticosteroids"
+    ],
+    "treatment_notes": "qweqwe",
+    "clinical_signs": [
+        "nikolsky_sign"
+    ],
+    "history_options": [
+        "family_history"
+    ],
+    "history_text": "qweqwe",
+    "secondary_changes_present": "Yes",
+    "secondary_changes": [
+        "thickening"
+    ],
+    "severity": "severe",
+    "other_notes": "erqr"
+}
